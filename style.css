@@ -1,0 +1,44 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body * {
+  font-family: 'Inter', sans-serif;
+  color: #ffffff;
+}
+
+body {
+  /*Adicionando background */
+
+  /* background-image: url(./assets/bg-mobile.jpg);
+  background-repeat: no-repeat; 
+  background-position: top center; 
+  background-size: cover;  */
+
+  /*Adicionando background em shorthand 👇 */
+
+  /* background: color or imagem | repeat | position/cover */
+  background: url(./assets/bg-mobile.jpg) no-repeat top center/cover;
+}
+
+#container {
+  width: 360px;
+  border: 1px solid greenyellow;
+  margin: auto; /* centraliza considerando o display*/
+}
+
+#profile {
+  text-align: center;
+}
+
+#profile img {
+  width: 112px;
+}
+
+#profile p {
+  /*pego do figma*/
+  font-weight: 500;
+  line-height: 24px; /* 150% */
+}
