@@ -98,10 +98,6 @@ body {
   animation: slide-out 0.2s /* forwards não é necessário porque o right ja é zero no switch button */;
 }
 
-#switch button:hover {
-  outline: 8px solid var(--highlight-color);
-}
-
 .light #switch button {
   animation: slide-in 0.2s forwards;
 }
@@ -196,6 +192,10 @@ footer {
   .light {
     --bg-url: url(./assets/bg-desktop-light.jpg)
   }
+
+  #switch button:hover {
+  outline: 8px solid var(--highlight-color);
+}
 }
 
 @keyframes slide-in {
