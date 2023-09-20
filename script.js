@@ -22,5 +22,5 @@ function toggleMode() {
       'foto de jadson sorrindo, usando roupa social com fundo preto',
     );
   }
-  console.log(img.alt)
+  // console.log(img.alt)
 }

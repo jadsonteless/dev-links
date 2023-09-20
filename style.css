@@ -41,6 +41,7 @@ body {
 
   /* background: color or imagem | repeat | position/cover */
   background: var(--bg-url) no-repeat top center/cover;
+  transition: background 1.0s;
 }
 
 #container {
