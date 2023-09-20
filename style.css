@@ -95,10 +95,15 @@ body {
   top: 50%;
   transform: translateY(-50%);
 
+  animation: slide-out 0.2s /* forwards não é necessário porque o right ja é zero no switch button */;
+}
+
+#switch button:hover {
+  outline: 8px solid var(--highlight-color);
 }
 
 .light #switch button {
-  left: 0;
+  animation: slide-in 0.2s forwards;
 }
 
 #switch span {
@@ -190,5 +195,23 @@ footer {
 
   .light {
     --bg-url: url(./assets/bg-desktop-light.jpg)
+  }
+}
+
+@keyframes slide-in {
+  from {
+    right: 0;
+  }
+  to {
+    right: 50%;
+  }
+}
+
+@keyframes slide-out {
+  from {
+    right: 50%;
+  }
+  to {
+    right: 0;
   }
 }
