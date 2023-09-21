@@ -1,8 +1,8 @@
 const black = document.querySelector('.black')
+const img = document.querySelector('#profile img');
 
-let img = document.querySelector('#profile img');
 document.addEventListener('DOMContentLoaded', function () {
-  let tema = localStorage.getItem('tema')
+  const tema = localStorage.getItem('tema')
   black.classList.add(tema)
   console.log(img)
 })
