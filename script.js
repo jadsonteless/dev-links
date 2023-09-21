@@ -3,16 +3,15 @@ const img = document.querySelector('#profile img');
 
 document.addEventListener('DOMContentLoaded', function () {
   const tema = localStorage.getItem('tema');
-  const foto = localStorage.getItem('foto')
-  console.log(foto)
+  const foto = localStorage.getItem('foto');
   black.classList.add(tema);
-  if(foto) {
+  if (foto) {
     img.setAttribute('src', foto);
   }
 });
 
 function toggleMode() {
-  trocarTema()
+  trocarTema();
 }
 
 function trocarTema() {
