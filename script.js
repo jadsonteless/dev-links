@@ -19,13 +19,12 @@ document.addEventListener('DOMContentLoaded', function () {
     const foto = getPhoto();
     const themeElement = document.getElementById(THEME_ELEMENT_ID);
     const profileImage = document.getElementById(PROFILE_IMAGE_ID);
-    console.log(profileImage);
 
     themeElement.classList.add(tema);
     profileImage.setAttribute('src', foto);
   }
   // Aplicar o tema imediatamente após a página ser carregada
-  aplicarTemaEImage();
+  // aplicarTemaEImage();
   
   // função para alterar entre temas e fotos
   function trocarTema() {
@@ -43,8 +42,9 @@ document.addEventListener('DOMContentLoaded', function () {
     const profileImage = document.getElementById(PROFILE_IMAGE_ID);
     profileImage.setAttribute('src', foto);
   }
+
   // Associar a função aplicarTemaEImagem ao evento 'DOMContentLoaded'
-  document.addEventListener('DOMContentLoaded', aplicarTemaEImage);
+  document.addEventListener('DOMContentLoaded', aplicarTemaEImage());
 
   // Associar a função trocarTema ao botão ou evento desejado
   const toggleMode = document.getElementById('switch');
